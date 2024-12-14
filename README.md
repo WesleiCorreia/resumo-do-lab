@@ -8,7 +8,7 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
 - Serviços em "Versão Prévia": Alguns serviços aparecem com a etiqueta "Versão Prévia". Isso significa que eles ainda estão em fase de testes e, por isso, não têm um SLA (Acordo de Nível de Serviço). Em outras palavras, não há garantia de continuidade ou estabilidade desses serviços.  
 
 
-# Benefícios da Nuvem Azure**
+# Benefícios da Nuvem Azure
 
 - **Alta Disponibilidade**  
   Os recursos da nuvem estão disponíveis sempre que você precisar.  
