@@ -50,4 +50,59 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
     - Portais Web  
     - Interfaces de linha de comando  
     - APIs  
-    - PowerShell  
+    - PowerShell
+
+
+# Tipo de Serviços de Nuvem
+
+- **IaaS (Infraestrutura como Serviço)**
+  - O que é? Infraestrutura de TI (servidores, redes, armazenamento) oferecida pela nuvem. É como alugar um data center.
+  - Para quem é? Desenvolvedores ou empresas que precisam de flexibilidade para gerenciar seus sistemas.
+  - **Exemplos:**
+      - AWS EC2: Aluguel de servidores para hospedar sites e aplicativos.
+      - Microsoft Azure Virtual Machines: Criação de máquinas virtuais personalizadas.
+ 
+- **PaaS (Plataforma como Serviço)**
+  - O que é? Ambiente completo para criar, testar e implantar aplicativos, sem se preocupar com infraestrutura.
+  - Para quem é? Desenvolvedores que querem focar no código sem gerenciar servidores.
+  - **Exemplos:**
+      - Google App Engine: Desenvolvimento e implantação de aplicativos sem gerenciar servidores.
+      - Heroku: Plataforma para criar e hospedar aplicativos.
+        
+- **SaaS (Software como Serviço)**
+  - O que é? Software pronto acessado via internet, sem necessidade de instalação ou manutenção.
+  - Para quem é? Usuários que precisam de soluções prontas e simples.
+  - **Exemplos:**
+      - Google Workspace (Gmail, Google Docs): Ferramentas de produtividade online.
+      - Netflix: Streaming de vídeos.
+      - Salesforce: Software de CRM.
+
+
+**Modelo de responsabilidade Compartilhada**
+
+**IaaS (Infraestrutura como Serviço)**
+- Provedor: Gerencia o hardware, redes, armazenamento e virtualização.
+- Cliente: É responsável pelo sistema operacional, aplicativos, dados, e configurações de segurança.
+
+**PaaS (Plataforma como Serviço)**
+- Provedor: Gerencia a infraestrutura, o sistema operacional, e a plataforma (banco de dados, ferramentas de desenvolvimento).
+- Cliente: É responsável pelo código do aplicativo e seus dados.
+
+**SaaS (Software como Serviço)**
+- Provedor: Gerencia tudo (infraestrutura, plataforma, e o software).
+- Cliente: É responsável apenas pela configuração e uso seguro do serviço (como senhas e permissões).
+
+
+**Comparação do Serviço de nuvem**
+
+**Iaas**
+- O Serviço de nuvem mais fexível.
+- Você configura e gerencia o hardware para seu aplicativo.
+
+**PaaS**
+- Focado no desennvolvimento de aplicativos.
+- O gerenciamento de plataforma é realizado pelo provedor de nuvem.
+
+**SaaS**
+- Modelo de preço de pagamento conforme o uso.
+- Os usuários pagam pelo software que utilizam em um modelo de assinatura.
