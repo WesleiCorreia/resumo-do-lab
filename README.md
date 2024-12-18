@@ -78,31 +78,31 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
       - Salesforce: Software de CRM.
 
 
-**Modelo de responsabilidade Compartilhada**
+  **Modelo de responsabilidade Compartilhada**
 
-**IaaS (Infraestrutura como Serviço)**
-- Provedor: Gerencia o hardware, redes, armazenamento e virtualização.
-- Cliente: É responsável pelo sistema operacional, aplicativos, dados, e configurações de segurança.
+  **IaaS (Infraestrutura como Serviço)**
+  - Provedor: Gerencia o hardware, redes, armazenamento e virtualização.
+  - Cliente: É responsável pelo sistema operacional, aplicativos, dados, e configurações de segurança.
 
-**PaaS (Plataforma como Serviço)**
-- Provedor: Gerencia a infraestrutura, o sistema operacional, e a plataforma (banco de dados, ferramentas de desenvolvimento).
-- Cliente: É responsável pelo código do aplicativo e seus dados.
+  **PaaS (Plataforma como Serviço)**
+  - Provedor: Gerencia a infraestrutura, o sistema operacional, e a plataforma (banco de dados, ferramentas de desenvolvimento).
+  - Cliente: É responsável pelo código do aplicativo e seus dados.
 
-**SaaS (Software como Serviço)**
-- Provedor: Gerencia tudo (infraestrutura, plataforma, e o software).
-- Cliente: É responsável apenas pela configuração e uso seguro do serviço (como senhas e permissões).
+  **SaaS (Software como Serviço)**
+  - Provedor: Gerencia tudo (infraestrutura, plataforma, e o software).
+  - Cliente: É responsável apenas pela configuração e uso seguro do serviço (como senhas e permissões).
 
 
-**Comparação do Serviço de nuvem**
+  **Comparação do Serviço de nuvem**
 
-**Iaas**
-- O Serviço de nuvem mais fexível.
-- Você configura e gerencia o hardware para seu aplicativo.
+  **Iaas**
+  - O Serviço de nuvem mais fexível.
+  - Você configura e gerencia o hardware para seu aplicativo.
 
-**PaaS**
-- Focado no desennvolvimento de aplicativos.
-- O gerenciamento de plataforma é realizado pelo provedor de nuvem.
+  **PaaS**
+  - Focado no desennvolvimento de aplicativos.
+  - O gerenciamento de plataforma é realizado pelo provedor de nuvem.
 
-**SaaS**
-- Modelo de preço de pagamento conforme o uso.
-- Os usuários pagam pelo software que utilizam em um modelo de assinatura.
+  **SaaS**
+  - Modelo de preço de pagamento conforme o uso.
+  - Os usuários pagam pelo software que utilizam em um modelo de assinatura.
