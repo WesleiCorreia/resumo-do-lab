@@ -106,3 +106,64 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
   **SaaS**
   - Modelo de preço de pagamento conforme o uso.
   - Os usuários pagam pelo software que utilizam em um modelo de assinatura.
+
+# Componentes de Arquitetura do Azure
+
+  **Regiões**
+  - O valor dos recursos varia de acordo com a região, e nem todos os recursos estão disponíveis em todas as regiões.
+  - Regiões são compostas por um ou mais datacenters muito próximos (geralmente são 3).
+  - Proporcionam flexibilidade e escala para reduzir a latência do cliente.
+  - Garantem a residência dos dados e oferecem conformidade abrangente (como a LGPD).
+    
+  **Zonas de Disponibilidade**
+  - Localizações físicas distintas dentro de uma mesma região, compostas por um ou mais datacenters.
+  - Projetadas com infraestrutura independente (energia, refrigeração e rede) para alta resiliência.
+  - Garantem alta disponibilidade e continuidade dos serviços, isolando falhas localizadas.
+  - Suportam aplicativos críticos e replicação de dados entre zonas dentro de uma região.
+    
+  **Pares de Regiões**
+  - Separação mínima de 300 milhas entre pares de regiões (toda região tem uma região par).
+  - Replicação automática para alguns serviços.
+  - Recuperação de regiões priorizada em caso de interrupção.
+  - Atualizações distribuídas sequencialmente para minimizar o tempo de inatividade.
+  - [Consulte as Regiões Pares do Azure](https://learn.microsoft.com/pt-br/azure/reliability/cross-region-replication-azure).
+    
+  **Regiões Soberanas do Azure**
+  - Serviços destinados a atender necessidades específicas de segurança e conformidade.
+    
+  Serviços Governamentais dos EUA
+  - Focados em agências federais, governos estaduais e locais dos EUA e seus provedores de soluções.
+    
+  Azure Governamental
+  - Instância separada e fisicamente isolada do Azure.
+  - Acessível apenas a pessoal autorizado e verificado.
+    
+  Azure China
+  - Conformidade com regulamentações locais, operado pela 21Vianet.
+  - Dados mantidos exclusivamente na China para garantir conformidade.
+
+  **Recursos do Azure**
+  - Componentes utilizados para criar soluções de nuvem, como:
+    - Máquinas virtuais
+    - Contas de armazenamento
+    - Redes virtuais
+    - Serviços de aplicativos
+    - Banco de dados SQL
+    - Funções
+  
+  **Grupo de Recursos**
+  - Contêiner utilizado para gerenciar e agregar recursos em uma única unidade.
+  - Um recurso pertence a um único grupo, mas pode ser movido entre grupos ou regiões.
+  - Permite a separação e organização de projetos.
+
+  **Assinaturas do Azure**
+  - Tipos: Desenvolvimento, Teste e Produção.
+  - Uma conta pode ter várias assinaturas, mas cada assinatura está vinculada a uma única conta.
+  - Usada para controlar cobrança e acesso:
+    - Cobranças: Relatórios e faturas separados por assinatura.
+    - Controle de Acesso: Gerenciamento de recursos provisionados.
+
+  **Grupos de Gerenciamento**
+  - Podem conter várias assinaturas do Azure.
+  - Condições aplicadas aos grupos são herdadas pelas assinaturas incluídas.
+
