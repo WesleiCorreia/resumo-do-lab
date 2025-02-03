@@ -166,4 +166,85 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
   **Grupos de Gerenciamento**
   - Podem conter várias assinaturas do Azure.
   - Condições aplicadas aos grupos são herdadas pelas assinaturas incluídas.
+    
+
+# COMPUTAÇÃO E REDE
+
+  **Serviços de Computação do Azure**
+  - A Computação do Azure é um serviço sob demanda que fornece recursos de computação, como discos, processadores, memória, rede e sistemas operacionais.
+
+  **Máquinas Virtuais do Azure**
+  - As máquinas virtuais do Azure (VMs) são emulações de software de computadores físicos.
+  - Incluem processador virtual, memória, armazenamento e rede.
+  - Oferta de IaaS que oferece personalização e controle total.
+
+  **Conjunto de Dimensionamento de VMs**
+  - Os conjuntos de dimensionamento oferecem uma oportunidade de balanceamento de carga para dimensionar os recursos automaticamente.
+
+  **Conjuntos de Disponibilidade de VM**
+  - **Domínio de falha**: Rack.
+  - **Domínio de atualização**: Fileira de VM.
+
+  **Área de Trabalho Virtual do Azure**
+  - A Área de Trabalho Virtual do Azure é uma virtualização de área de trabalho e aplicativo executada na nuvem.
+  - Crie um ambiente completo de virtualização da área de trabalho sem precisar executar outros servidores de gateway.
+  - Reduza o risco de que o recurso seja deixado para trás.
+  - Implantações reais de várias sessões.
+
+  **Serviços de Contêineres do Azure**
+  - Os contêineres do Azure fornecem um ambiente leve e virtualizado que não exige o gerenciamento do sistema operacional e pode responder a alterações sob demanda.
+  - **Instâncias de Contêiner do Azure**: Uma oferta de PaaS que executa um contêiner ou pod de contêineres no Azure.
+  - **Aplicativos de Contêiner do Azure**: Uma oferta de PaaS, como instâncias de contêineres, que pode balancear a carga e escalar.
+  - **Serviço de Kubernetes do Azure**: Um serviço de orquestração para contêineres com arquiteturas distribuídas e grandes volumes de contêineres.
+
+  **Azure Functions**
+  - **Azure Functions**: Uma oferta de PaaS que dá suporte a operações de computação sem servidor.
+  - O código baseado em eventos é executado quando chamado, sem exigir uma infraestrutura de servidor durante períodos inativos.
+
+  **Comparar Opções de Computação do Azure**
+
+  **Máquinas Virtuais**
+  - Servidor baseado em nuvem que dá suporte a ambientes Windows ou Linux.
+  - Útil para migrações de **lift-and-shift** para a nuvem.
+  - Pacotes do sistema operacional completo, incluindo o sistema operacional do host.
+
+  **Área de Trabalho Virtual**
+  - Fornece uma experiência de área de trabalho do Windows baseada em nuvem.
+  - Aplicativos dedicados para conexão e uso ou acessíveis de qualquer navegador moderno.
+  - O logon de vários clientes permite que vários usuários façam logon no mesmo computador ao mesmo tempo.
+
+  **Contêineres**
+  - Ambiente leve e em miniatura adequado para a execução de microsserviços.
+  - Projetado para escalabilidade e resiliência por meio da orquestração (AKS).
+  - Os aplicativos e serviços são empacotados em um contêiner que fica na parte superior do sistema operacional do host. Vários contêineres podem ficar em um sistema     operacional do host.
+
+  **Serviços de Aplicativos do Azure**
+  - Os **Serviços de Aplicativos do Azure** consistem em uma plataforma totalmente gerenciada para criar, implantar e dimensionar aplicativos Web e APIs rapidamente.
+  - Trabalha com **.NET, .NET Core, Node.js, Java, Python ou PHP**.
+  - Oferta de **PaaS** com requisitos de nível corporativo de desempenho, segurança e conformidade.
+
+  **Serviços de Rede do Azure**
+  - A **Rede Virtual do Azure (VNet)** permite que os recursos do Azure se comuniquem uns com os outros, com a Internet e com as redes locais.
+  - **Pontos de extremidade públicos**: Acessíveis de qualquer lugar na Internet.
+  - **Pontos de extremidade privados**: Acessíveis somente de dentro da sua rede.
+  - As **sub-redes virtuais** segmentam sua rede para atender às suas necessidades.
+  - O **emparelhamento de rede** conecta suas redes privadas diretamente.
+
+  **Serviços de Rede do Azure: Gateway de VPN**
+  - O **Gateway de VPN** é usado para enviar tráfego criptografado entre uma rede virtual do Azure e uma rede no local pela Internet pública.
+
+### **Serviços de Rede do Azure: ExpressRoute**
+  - O **ExpressRoute** estende as redes locais para o Azure por meio de uma conexão privada facilitada por um provedor de conectividade (um cabo de fibra do seu datacenter até o datacenter da Microsoft).
+
+  **DNS do Azure**
+  - Confiabilidade e desempenho aproveitando uma rede global de servidores de nome DNS usando a rede Anycast.
+  - A segurança do DNS do Azure baseia-se no **Gerenciador de Recursos do Azure**, habilitando o controle de acesso baseado em função, monitoramento e registro em log.
+  - Facilidade de uso para gerenciar seus recursos externos e do Azure com um único serviço DNS.
+  - As **redes virtuais personalizáveis** permitem que você use nomes de domínio privados e totalmente personalizados em suas redes virtuais privadas.
+  - Os **registros de alias** dão suporte a conjuntos de registros de alias para apontar diretamente para um recurso do Azure.
+
+
+  
+
+  
 
