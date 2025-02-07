@@ -242,39 +242,40 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
   - Facilidade de uso para gerenciar seus recursos externos e do Azure com um único serviço DNS.
   - As **redes virtuais personalizáveis** permitem que você use nomes de domínio privados e totalmente personalizados em suas redes virtuais privadas.
   - Os **registros de alias** dão suporte a conjuntos de registros de alias para apontar diretamente para um recurso do Azure.
+    
 
 # Armazenamento no Azure
 
-  ## Contas de Armazenamento
+  **Contas de Armazenamento**
   - Deve ter um nome globalmente exclusivo.
   - Fornecer acesso à Internet em todo o mundo.
   - Determinar os serviços de armazenamento e as opções de redundância.
 
-  ## Redundância de Armazenamento
+  **Redundância de Armazenamento**
   - **LRS (Locally Redundant Storage):** Armazena três cópias dos dados dentro de um único datacenter na mesma região. Protege contra falhas de hardware, mas não contra   desastres regionais.
   - **ZRS (Zone-Redundant Storage):** Armazena cópias dos dados em diferentes zonas de disponibilidade dentro da mesma região. Protege contra falhas de datacenters     individuais.
   - **GRS (Geo-Redundant Storage):** Mantém três cópias dos dados na região primária e replica automaticamente para outra região distante (com mais três cópias). Oferece   proteção contra desastres regionais.
   - **GZRS (Geo-Zone-Redundant Storage):** Combina ZRS e GRS, armazenando cópias em múltiplas zonas na região primária e replicando para uma região secundária. Oferece o mais alto nível de proteção e disponibilidade.
 
-## Durabilidade Associada a Cada Tipo de Redundância:
+**Durabilidade Associada a Cada Tipo de Redundância:**
 - **LRS (Locally Redundant Storage):** 99,999999999% (11 noves) de durabilidade dentro de um único datacenter.
 - **ZRS (Zone-Redundant Storage):** 99,9999999999% (12 noves) de durabilidade, pois os dados são replicados em várias zonas dentro da mesma região.
 - **GRS (Geo-Redundant Storage):** 99,99999999999999% (16 noves) de durabilidade, pois os dados são replicados para outra região geograficamente distante.
 - **GZRS (Geo-Zone-Redundant Storage):** Também oferece 16 noves de durabilidade, combinando replicação entre zonas e entre regiões.
 
-  ## Qual Redundância é Indicada para Ambientes Não Produtivos?
+  **Qual Redundância é Indicada para Ambientes Não Produtivos?**
   - **LRS** (Locally Redundant Storage).
 
-  ## Serviços de Armazenamento do Azure:
+  **Serviços de Armazenamento do Azure:**
   - **Blob do Azure:** Armazenamento para dados não estruturados, como texto ou dados binários.
   - **Disco do Azure:** Fornece discos para máquinas virtuais e outros serviços.
   - **Fila do Azure:** Armazenamento de mensagens para grandes volumes de dados com até 64 KB por mensagem.
   - **Arquivos do Azure:** Compartilhamento de arquivos de rede disponível via SMB.
   - **Tabelas do Azure:** Armazenamento de dados estruturados não relacionais, usando um design de chave/atributo.
 
-  ## Pontos de Extremidade Públicos do Serviço de Armazenamento:
+  **Pontos de Extremidade Públicos do Serviço de Armazenamento:**
 
-  ### Tipos de Pontos de Extremidade Públicos:
+  **Tipos de Pontos de Extremidade Públicos:**
   1. **Pontos de Extremidade Padrão:**
      - Cada conta de armazenamento recebe um endpoint público exclusivo baseado no nome da conta e no serviço utilizado.
      - Exemplos de URLs padrão para diferentes serviços:
@@ -283,23 +284,23 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
        - **Queue Storage:** `https://<storage-account-name>.queue.core.windows.net`
        - **File Storage:** `https://<storage-account-name>.file.core.windows.net`
 
-  ## Camadas de Acesso de Armazenamento do Azure:
+  **Camadas de Acesso de Armazenamento do Azure:**
   - **Frequente:** Otimizada para dados acessados frequentemente.
   - **Esporádico:** Otimizada para dados acessados esporadicamente e armazenados por pelo menos 30 dias.
   - **Frio:** Para dados acessados raramente e armazenados por pelo menos 90 dias.
   - **Arquivo Morto:** Para dados raramente acessados e armazenados por pelo menos 180 dias.
 
-  ## Migrações para o Azure:
+  **Migrações para o Azure:**
   - Plataforma de migração unificada com ferramentas integradas e autônomas.
   - Avaliação e migração de dados.
 
-  ## Azure Data Box:
+  **Azure Data Box:**
   - Armazena até 80 terabytes de dados.
   - Move backups e dados para o Azure.
   - Protege dados durante o trânsito.
   - Ideal para locais remotos com conectividade limitada.
 
-  ## Opções de Gerenciamento de Arquivos:
+  **Opções de Gerenciamento de Arquivos:**
   - **AzCopy:** Utilitário de linha de comando para copiar blobs ou arquivos para/da conta de armazenamento.
   - **Gerenciador de Armazenamento do Azure:** Interface gráfica para interação com armazenamento no Azure (semelhante ao Windows Explorer).
   - **Sincronização de Arquivos do Azure:** Sincroniza arquivos entre nuvem e locais de forma bidirecional.
