@@ -341,10 +341,10 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
   Fornece segurança adicional para as identidades, exigindo dois ou mais elementos para autenticação completa.
 
   **Estratégia para aplicar Autenticação Multifator:**  
-  Algo que você sabe <--> Algo que você possui <--> Algo que você é
+    Algo que você sabe <--> Algo que você possui <--> Algo que você é
 
   **B2B do Microsoft Entra External ID**
-  O Microsoft Entra External ID (B2B) permite que empresas concedam acesso seguro a usuários externos, como parceiros, fornecedores e clientes, sem precisar criar contas novas para eles.
+    O Microsoft Entra External ID (B2B) permite que empresas concedam acesso seguro a usuários externos, como parceiros, fornecedores e clientes, sem precisar criar contas novas para eles.
 
   - Convida usuários externos para acessar aplicativos e recursos da empresa.
   - Usa o login existente do parceiro (Google, Microsoft, Facebook, etc.).
