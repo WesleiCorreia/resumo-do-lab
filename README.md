@@ -305,5 +305,92 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
   - **Gerenciador de Armazenamento do Azure:** Interface gráfica para interação com armazenamento no Azure (semelhante ao Windows Explorer).
   - **Sincronização de Arquivos do Azure:** Sincroniza arquivos entre nuvem e locais de forma bidirecional.
 
+
+# Identidade, Acesso e Segurança
+
+ **ID do Microsoft Entra**
+  O Microsoft Entra ID é o serviço de gerenciamento de identidades e acesso baseado em nuvem do Microsoft Azure.
+
+  - **Autenticação**: Os funcionários entram para acessar os recursos.
+  - **Login Único (SSO)**
+  - **Gerenciamento de Aplicativos**
+  - **Negócios para Negócios (B2B)**
+  - **Gerenciamento de dispositivos**
+
+  **Microsoft Entra Domain Services**
+  O Microsoft Entra Domain Services é um serviço que permite usar recursos do Active Directory na nuvem, sem precisar de um servidor físico.
+
+  - Permite login seguro em máquinas e aplicativos.
+  - Conecta máquinas virtuais no Azure a um domínio.
+  -  Aplica regras de segurança (Política de Grupo - GPO).
+  - Funciona com aplicativos antigos que precisam de autenticação tradicional.
+  - Sincroniza com o Microsoft Entra ID, sem precisar de servidores extras.
+
+   **Comparar Autenticação e Autorização**
+
+  **Autenticação**
+  - Identifica a pessoa ou serviço buscando acesso a um recurso.
+  - Solicita credenciais de acesso legítimo.
+  - Base para criar princípios de identidade e controle de acesso seguro.
+
+  **Autorização**
+  - Determina o nível de acesso de uma pessoa ou serviço autenticado.
+  - Define quais dados eles podem acessar e o que podem fazer com eles.
+
+  **Autenticação Multifator**
+  Fornece segurança adicional para as identidades, exigindo dois ou mais elementos para autenticação completa.
+
+  **Estratégia para aplicar Autenticação Multifator:**  
+  Algo que você sabe <--> Algo que você possui <--> Algo que você é
+
+  **B2B do Microsoft Entra External ID**
+  O Microsoft Entra External ID (B2B) permite que empresas concedam acesso seguro a usuários externos, como parceiros, fornecedores e clientes, sem precisar criar contas novas para eles.
+
+  - Convida usuários externos para acessar aplicativos e recursos da empresa.
+  - Usa o login existente do parceiro (Google, Microsoft, Facebook, etc.).
+  - Aplica políticas de segurança, como autenticação multifator (MFA) e controle de acesso condicional.
+  - Garante colaboração segura, sem comprometer a proteção dos dados internos.
+
+  **B2C do Microsoft Entra External ID**
+  O Microsoft Entra External ID (B2C) permite que empresas criem experiências de login personalizadas para clientes em aplicativos e sites.
+
+  - Permite que clientes usem contas próprias (Google, Facebook, Apple, Microsoft ou e-mail/senha).
+  - Personaliza a experiência de login com telas de autenticação personalizadas.
+  - Garante segurança com autenticação multifator (MFA) e proteção contra fraudes.
+  - Escala para milhões de usuários, ideal para aplicativos de grande público.
+
+  **Acesso Condicional**
+  O Acesso Condicional do Microsoft Entra ID é uma ferramenta que ajuda a proteger os recursos da empresa, permitindo ou bloqueando acessos com base em condições específicas.
+
+  - Associação de usuário ou grupo
+  - Local do IP
+  - Dispositivo
+  - Aplicativo
+  - Detecção de risco
+
+  **Controle de Acesso Baseado em Função (RBAC)**
+  O Controle de Acesso Baseado em Função (RBAC - Role-Based Access Control) no Microsoft Entra ID permite gerenciar permissões de usuários com base em suas funções dentro da organização.
+
+  - Gerenciamento de acesso de granularidade fina.
+  - Divide as tarefas dentro da equipe e concede somente a quantidade de acesso necessária para trabalhar.
+  - Habilita o acesso ao portal do Azure e o controle de acesso aos recursos.
+
+  **Confiança Zero (Zero Trust)**
+  O Confiança Zero (Zero Trust) é um modelo de segurança que parte do princípio de que nenhum acesso deve ser confiado automaticamente, mesmo dentro da rede da empresa.
+
+  **Proteção Completa**
+  - Uma abordagem em camadas para proteger os sistemas de computador.
+  - Fornece vários níveis de proteção.
+  - Ataques contra uma camada são isolados das camadas subsequentes.
+
+  **Microsoft Defender para Nuvem**
+  O Microsoft Defender para Nuvem é um serviço de monitoramento que fornece proteção contra ameaças nos datacenters do Azure e locais.
+
+  - Fornece recomendações de segurança.
+  - Detecta e bloqueia malware.
+  - Analisa e identifica ataques potenciais.
+  - Controle de acesso just-in-time para portas.
+
+
   
 
