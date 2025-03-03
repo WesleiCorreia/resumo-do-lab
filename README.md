@@ -392,5 +392,53 @@ Este repositório contém o resumo das lições aprendidas durante o desenvolvim
   - Controle de acesso just-in-time para portas.
 
 
+
+FALTANDO INFORMAÇÃO
+
+
   
+
+## **Gerenciamento e Conformidade**
+
+  **Azure Policy**
+  - O Azure Policy ajuda a impor padrões organizacionais e a avaliar a conformidade em escala.
+  - Fornece governança e consistência de recursos com conformidade regulatória, segurança, custo e gerenciamento.
+  - Avalia e identifica os recursos do Azure que não atendem às suas políticas.
+  - Oferece definições de políticas e iniciativas integradas, em categorias como armazenamento, rede, computação, central de segurança e monitoramento.
+  - Permite criar uma Policy e deixá-la salva sem ativá-la (congelada).
+  - Permite criar uma Policy ativa, podendo assumir diferentes estados:
+    - **Non-compliant**: O recurso não atende à política definida.
+    - **Remediation**: O recurso está passando por correção para se tornar conforme.
+    - **Compliant**: O recurso está em conformidade com a política.
+
+  **Bloqueios de Recursos**
+  - Protege os recursos do Azure contra exclusão ou modificação acidental.
+  - Permite gerenciar bloqueios na assinatura, grupo de recursos ou em níveis de recursos individuais dentro do Portal do Azure.
+
+  **Tipos de Bloqueios**
+  | Tipo de Bloqueio | Ler | Atualizar | Excluir |
+  |-----------------|-----|----------|--------|
+  | **Excluir**    | Sim | Sim      | Não    |
+  | **ReadOnly**   | Sim | Não      | Não    |
+
+
+  **Portal de Confiança do Serviço**
+  O **Portal de Confiança do Serviço** (**Service Trust Portal - STP**) da Microsoft fornece informações sobre **segurança, conformidade e privacidade** dos serviços em nuvem.
+
+  **Principais Funcionalidades**
+  - **Documentação de conformidade**: Relatórios de auditoria, certificações (ISO, SOC, GDPR, etc.).
+  - **Transparência**: Explicações sobre como a Microsoft protege dados e atende às regulamentações.
+  - **Gerenciamento de riscos**: Recursos para ajudar empresas a avaliar a segurança do Azure e outros serviços.
+
+  🔗 **Acesso**: [Service Trust Portal](https://servicetrust.microsoft.com/)
+
+
+  **Microsoft Purview**
+  O **Microsoft Purview** é uma solução da Microsoft para **governança, proteção e conformidade de dados**. Ele ajuda a **classificar, monitorar e proteger** informações em ambientes na nuvem e híbridos.
+
+  **Principais Recursos**
+  - **Governança**: Descoberta e rastreamento de dados.
+  - **Proteção**: Controle de acessos e prevenção contra perda de dados (DLP).
+  - **Conformidade**: Atende regulamentos como LGPD e GDPR.
+
 
